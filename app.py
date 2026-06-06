@@ -25,7 +25,9 @@ st.markdown("### Predict Math Score using ML Models")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("C:/Users/saima/projects/student_performance_app/StudentsPerformance.csv")
+    current_dir = os.path.dirname(__file__)
+    file_path = os.path.join(current_dir, "StudentsPerformance.csv")
+    return pd.read_csv(file_path)
 
 try:
     df = load_data()
