@@ -41,7 +41,7 @@ if st.checkbox("📂 Show Dataset"):
 # -----------------------------
 # FEATURES
 # -----------------------------
-X = df.drop(columns=['math score'], axis=1)
+X = df.drop(columns=['math score'])
 y = df['math score']
 
 # -----------------------------
